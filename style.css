@@ -1,4 +1,6 @@
-/*(parte-testo-scorre)*/
+    
+    
+    /*(parte-testo-scorre)*/
 
 #container {
     overflow: hidden;
@@ -31,22 +33,32 @@
     }
 }
 
-/*(-------------------------------------------------------------------------------------------------------------------)*/
+/*(-----------------fine-testo-infinito------------------------------------------------------------------------------------------------)*/
 
 
-/*(contatti)*/
-#contatti {
-    font-size: 22px;
-    text-align: left;
+    /*per-centare*/
+
+.center{
+        text-align: center;
+    }
+    
+.blinking-text {
+        animation: blink 2s infinite;
+    }
+    
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
-
-
-#chi-siamo {
-    text-align: center;
-    font-size: 22px;
-}
-
-
 
 .titolo {
     font-size: 160%;
@@ -62,7 +74,8 @@ div.tutto div {
     float: left;
 }
 
-/*costruzione-titoli-dei-videogames*/
+
+    /*costruzione-titoli-dei-videogames*/
 
 div.city {
     background-color: mediumseagreen;
@@ -83,17 +96,23 @@ div.city2 {
     font-size: 120%;
 }
 
-/* Rimuovi la sottolineatura dai link */
+
+    /*Rimuovi-la-sottolineatura-dai-link*/
+
 a {
     text-decoration: none;
 }
 
-/*(presentazione-pdf)*/
+
+    /*(presentazione-pdf)*/
+
 .pdf {
     text-align: right !important;
 }
 
-        /*(sondaggio)*/
+        
+    /*(sondaggio)*/
+
 #sondaggio{
     display: flex;
     text-align: center;
@@ -105,8 +124,8 @@ a {
 
 #sondaggio p {
     color: black;
-    display: inline-block; /* Mostra il testo e l'immagine sulla stessa linea */
-    margin-right:60px; /* Aggiunge uno spazio tra il testo e l'immagine */
+    display: inline-block;                  /*Mostra-il-testo-e-l'immagine-sulla-stessa-linea*/
+    margin-right:60px;                      /*Aggiunge-uno-spazio-tra-il-testo-e-l'immagine*/
 }
 
 #sondaggio img {
@@ -115,7 +134,7 @@ a {
 }
 
 
-/*(quiz)*/
+    /*(quiz)*/
 #quiz{
     display: flex;
     text-align: center;
@@ -127,15 +146,11 @@ a {
 
 #quiz p {
     color: black;
-    display: inline-block; /* Mostra il testo e l'immagine sulla stessa linea */
-    margin-right:60px; /* Aggiunge uno spazio tra il testo e l'immagine */
+    display: inline-block; /*Mostra-il-testo-e-l'immagine-sulla-stessa-linea*/
+    margin-right:60px; /*Aggiunge-uno-spazio-tra-il-testo-e-l'immagine*/
 }
 
 #quiz img {
     width: 160px;
     height: 145px;
-}
-
-.center{
-    text-align: center;
 }
