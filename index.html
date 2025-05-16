@@ -7,7 +7,163 @@
 		TacGamesRewiew
 	</title>
 
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<style>
+
+	/*(parte-testo-scorre)*/
+
+	#container {
+		overflow: hidden;
+		left: 0;
+		z-index: 1;
+		background-color: MediumSeaGreen;
+	}
+
+	.stage_animation {
+		overflow: hidden;
+		white-space: nowrap;
+		display: inline-block;
+		animation: stage_animation 18s linear infinite;
+		margin-top: 25px;
+	}
+
+	.stage_animation p {
+		display: inline-block;
+		font-family: arial;
+		font-size: 30px;
+	}
+
+	@keyframes stage_animation {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(-50%, 0, 0);
+		}
+	}
+
+	/*(-----------------fine-testo-infinito------------------------------------------------------------------------------------------------)*/
+
+
+		/*per-centare*/
+
+	.center{
+			text-align: center;
+		}
+		
+	.blinking-text {
+			animation: blink 2s infinite;
+		}
+		
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.titolo {
+		font-size: 160%;
+	}
+
+	div.tutto {
+		width: 100%;
+		overflow: auto;
+	}
+
+	div.tutto div {
+		width: 45%;
+		float: left;
+	}
+
+
+		/*costruzione-titoli-dei-videogames*/
+
+	div.city {
+		background-color: mediumseagreen;
+		border: 2px solid black;
+		width: 45%;
+		margin: 1%;
+		padding: 1%;
+		font-size: 120%;
+	}
+
+	div.city2 {
+		float: right;
+		background-color: MediumSeaGreen;
+		border: 2px solid black;
+		width: 45%;
+		margin: 1%;
+		padding: 1%;
+		font-size: 120%;
+	}
+
+
+		/*Rimuovi-la-sottolineatura-dai-link*/
+
+	a {
+		text-decoration: none;
+	}
+
+
+		/*(presentazione-pdf)*/
+
+	.pdf {
+		text-align: right !important;
+	}
+
+			
+		/*(sondaggio)*/
+
+	#sondaggio{
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		font-size: 30px;
+		margin: 20px;
+		padding: 20px;
+	}
+
+	#sondaggio p {
+		color: black;
+		display: inline-block;                  /*Mostra-il-testo-e-l'immagine-sulla-stessa-linea*/
+		margin-right:60px;                      /*Aggiunge-uno-spazio-tra-il-testo-e-l'immagine*/
+	}
+
+	#sondaggio img {
+		width: 250px;
+		height: 145px;
+	}
+
+
+		/*(quiz)*/
+	#quiz{
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		font-size: 30px;
+		margin: 20px;
+		padding: 20px;
+	}
+
+	#quiz p {
+		color: black;
+		display: inline-block; /*Mostra-il-testo-e-l'immagine-sulla-stessa-linea*/
+		margin-right:60px; /*Aggiunge-uno-spazio-tra-il-testo-e-l'immagine*/
+	}
+
+	#quiz img {
+		width: 160px;
+		height: 145px;
+	}
+	</style>
 
 </head>
 
@@ -58,7 +214,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=2" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -74,7 +230,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=2" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -94,7 +250,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=5" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -108,7 +264,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=5" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -130,7 +286,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=5" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -143,7 +299,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=5" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -166,7 +322,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=5" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
@@ -179,7 +335,7 @@
 
 
 			<div class="pdf"> <!--bottone-presentazione-valutazioni-videogames-->
-				<form action="files/testo_del_paragrafo_20231204_093918_0000.pdf#page=5" target="_blank">
+				<form action="https://www.canva.com/design/DAFyKanGuQg/-Gy-ZJvAHgLAWyJ5QJ_m_g/view?utm_content=DAFyKanGuQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8bc2980b1c#page=2" target="_blank">
 					<button style="font-size:24px; background-color: mediumseagreen">BLOG/PDF</button>
 				</form>
 			</div>
